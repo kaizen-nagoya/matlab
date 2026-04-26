@@ -1,3 +1,5 @@
+Yann N Dauphin, Angela Fan, Michael Auli, and David Grangier. 2017. Language modeling with gated convolutional networks. In ICML. 933–941.
+
 # References
 
 [1] Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao, Harkirat Behl, et al. 2024. Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone. arXiv:2404.14219 [cs.CL]
@@ -52,102 +54,98 @@
 
 [26] Bradley Camburn, Vimal Viswanathan, Julie Linsey, David Anderson, Daniel Jensen, Richard Crawford, Kevin Otto, and Kristin Wood. 2017. Design prototyping methods: state of the art in strategies, techniques, and guidelines. Design Science 3 (2017), e13.
 
-[27] Júlio G Campos, Grettel M Garcıa, Jefferson A de Sousa, Eduardo TL Corseuil, Yenier T Izquierdo, Melissa Lemos, and Marco A Casanova. 2025.
-Text-to-SQL Experiments with Engineering Data Extracted from CAD Files. In Proceedings of the 27th International Conference on Enterprise
-Information Systems (ICEIS 2025), Vol. 1. 343–350. doi:10.5220/0013436800003929
-[28] Ata Çelen, Guo Han, Konrad Schindler, Luc Van Gool, Iro Armeni, Anton Obukhov, and Xi Wang. 2024. I-design: Personalized llm interior designer.
-In European Conference on Computer Vision. Springer, 217–234.
-[29] Angel X Chang, Thomas Funkhouser, Leonidas Guibas, Pat Hanrahan, Qixing Huang, Zimo Li, Silvio Savarese, Manolis Savva, Shuran Song, Hao
-Su, et al. 2015. Shapenet: An information-rich 3d model repository. arXiv preprint arXiv:1512.03012 (2015).
-[30] Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, et al. 2024. A
-survey on evaluation of large language models. ACM TIST 15, 3 (2024), 1–45.
-[31] Jiali Chen, Xusen Hei, HongFei Liu, Yuancheng Wei, Zikun Deng, Jiayuan Xie, Yi Cai, and Li Qing. 2025. CADReview: Automatically Reviewing
-CAD Programs with Error Detection and Correction. In ACL.
-[32] Lichang Chen, Shiyang Li, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, et al. 2023.
-AlpaGasus: Training a Better Alpaca with Fewer Data. In ICLR.
-Manuscript submitted to ACM
-30 Zhang et al.
-[33] Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde De Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas
-Joseph, Greg Brockman, et al. 2021. Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374 (2021).
-[34] Zhe Chen, Weiyun Wang, Yue Cao, Yangzhou Liu, Zhangwei Gao, Erfei Cui, Jinguo Zhu, Shenglong Ye, Hao Tian, Zhaoyang Liu, et al. 2024.
-Expanding performance boundaries of open-source multimodal models with model, data, and test-time scaling. arXiv preprint arXiv:2412.05271
-(2024).
-[35] Zhe Chen, Jiannan Wu, Wenhai Wang, Weijie Su, Guo Chen, Sen Xing, Muyan Zhong, Qinglong Zhang, Xizhou Zhu, Lewei Lu, et al. 2024. Internvl:
-Scaling up vision foundation models and aligning for generic visual-linguistic tasks. In CVPR. 24185–24198.
-[36] [37] Wen Cheng, Ke Sun, Xinyu Zhang, and Wei Wang. 2025. Security attacks on llm-based code completion tools. In AAAI, Vol. 39. 23669–23677.
-Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E Gonzalez,
-et al. 2023. Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality, March 2023. https:// lmsys.org/ blog/ 2023-03-30-vicuna 3, 5
-(2023). Accessed: Jan. 15, 2026.
-[38] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles
-Sutton, Sebastian Gehrmann, et al. 2023. Palm: Scaling language modeling with pathways. JMLR 24, 240 (2023), 1–113.
-[39] Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha
-Brahma, et al. 2024. Scaling instruction-finetuned language models. JMLR 25, 70 (2024), 1–53.
-[40] Blender Online Community. 2024. Blender – a 3D modelling and rendering package. https://www.blender.org [Computer software] (Version 4.1),
-Accessed: Jan. 15, 2026.
-[41] Amirmohammad Daareyni, Antti Martikkala, Hossein Mokhtarian, and Iñigo Flores Ituarte. 2025. Generative AI meets CAD: enhancing engineering
-design to manufacturing processes with large language models. The International Journal of Advanced Manufacturing Technology (2025), 1–10.
-[42] Damai Dai, Chengqi Deng, Chenggang Zhao, Rx Xu, Huazuo Gao, Deli Chen, Jiashi Li, Wangding Zeng, Xingkai Yu, Y Wu, et al. 2024. DeepSeekMoE:
-Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models. In ACL (Long Papers). 1280–1297.
-[43] Wenliang Dai, Junnan Li, Dongxu Li, Anthony Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale N Fung, and Steven Hoi. 2023. Instructblip:
-Towards general-purpose vision-language models with instruction tuning. Advances in neural information processing systems 36 (2023), 49250–49267.
-[44] Badhan Chandra Das, M Hadi Amini, and Yanzhao Wu. 2025. Security and privacy challenges of large language models: A survey. Comput. Surveys
-57, 6 (2025), 1–39.
-[45] [46] Yann N Dauphin, Angela Fan, Michael Auli, and David Grangier. 2017. Language modeling with gated convolutional networks. In ICML. 933–941.
-Mostafa Dehghani, Josip Djolonga, Basil Mustafa, Piotr Padlewski, Jonathan Heek, Justin Gilmer, Andreas Peter Steiner, Mathilde Caron, Robert
-Geirhos, Ibrahim Alabdulmohsin, et al. 2023. Scaling vision transformers to 22 billion parameters. In ICML. 7480–7512.
-[47] Haoxuan Deng, Samir Khan, and John Ahmet Erkoyuncu. 2024. An Investigation on Utilizing Large Language Model for Industrial Computer-Aided
-Design Automation. Procedia CIRP 128 (2024), 221–226. 34th CIRP Design Conference.
-[48] Ismail Dergaa, Karim Chamari, Piotr Zmijewski, and Helmi Ben Saad. 2023. From human writing to artificial intelligence generated text: examining
-the prospects and potential threats of ChatGPT in academic writing. Biology of sport 40, 2 (2023), 615–622.
-[49] Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. 2023. Qlora: Efficient finetuning of quantized llms. NeurIPS 36 (2023),
-10088–10115.
-[50] Anna C Doris, Md Ferdous Alam, Amin Heyrani Nobari, and Faez Ahmed. 2025. Cad-coder: An open-source vision-language model for computer-
-aided design code generation. In International Design Engineering Technical Conferences and Computers and Information in Engineering Conference,
-Vol. 89220. American Society of Mechanical Engineers, V03AT03A031.
-[51] Anna C Doris, Daniele Grandi, Ryan Tomich, Md Ferdous Alam, Mohammadmehdi Ataei, Hyunmin Cheong, and Faez Ahmed. 2025. Designqa: A
-multimodal benchmark for evaluating large language models’ understanding of engineering documentation. JCISE 25, 2 (2025), 021009.
-[52] Danny Driess, Fei Xia, Mehdi SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong,
-Tianhe Yu, et al. 2023. PaLM-E: An Embodied Multimodal Language Model. In ICML. 8469–8488.
-[53] Changyu Du, Sebastian Esser, Stavros Nousias, and André Borrmann. 2026. Text2BIM: Generating Building Models Using a Large Language
-Model-Based Multiagent Framework. Journal of Computing in Civil Engineering 40, 2 (2026), 04025142.
-[54] Nan Du, Yanping Huang, Andrew M Dai, Simon Tong, Dmitry Lepikhin, Yuanzhong Xu, Maxim Krikun, Yanqi Zhou, Adams Wei Yu, Orhan Firat,
-et al. 2022. Glam: Efficient scaling of language models with mixture-of-experts. In ICML. 5547–5569.
-[55] Yuhao Du, Shunian Chen, Wenbo Zan, Peizhao Li, Mingxuan Wang, Dingjie Song, Bo Li, Yan Hu, and Benyou Wang. 2024. BlenderLLM: Training
-Large Language Models for Computer-Aided Design with Self-improvement. arXiv preprint arXiv:2412.14203 (2024).
-[56] Mohamed Elrefaie, Florin Morar, Angela Dai, and Faez Ahmed. 2024. Drivaernet++: A large-scale multimodal car dataset with computational fluid
-dynamics simulations and deep learning benchmarks. NeurIPS 37 (2024), 499–536.
-[57] Mohamed Elrefaie, Janet Qian, Raina Wu, Qian Chen, Angela Dai, and Faez Ahmed. 2025. AI agents in engineering design: a multi-agent framework
-for aesthetic and aerodynamic car design. In IDETC/CIE, Vol. 89237.
-[58] Haoqiang Fan, Hao Su, and Leonidas J Guibas. 2017. A point set generation network for 3d object reconstruction from a single image. In CVPR.
-605–613.
-[59] Rinon Gal, Or Patashnik, Haggai Maron, Amit H Bermano, Gal Chechik, and Daniel Cohen-Or. 2022. Stylegan-nada: Clip-guided domain adaptation
-of image generators. TOG 41, 4 (2022), 1–13.
-Manuscript submitted to ACM
-Large Language Models for Computer-Aided Design: A Survey 31
-[60] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, Horace He, Anish Thite, Noa Nabeshima, et al.
-2020. The pile: An 800gb dataset of diverse text for language modeling. arXiv preprint arXiv:2101.00027 (2020).
-[61] Zhangwei Gao, Zhe Chen, Erfei Cui, Yiming Ren, Weiyun Wang, Jinguo Zhu, Hao Tian, Shenglong Ye, Junjun He, Xizhou Zhu, et al. 2024.
-Mini-InternVL: a flexible-transfer pocket multi-modal model with 5% parameters and 90% performance. Visual Intelligence 2, 1 (2024), 1–17.
-[62] Oihana Garcia, Kerman López de Calle, and Jon Ander Sarasua. 2025. Do LLMs understand shapes? Exploring STL files for automatic CAD feature
-recognition. Procedia CIRP 133 (2025), 126–131.
-[63] Xinyang Geng, Arnav Gudibande, Hao Liu, Eric Wallace, Pieter Abbeel, Sergey Levine, and Dawn Song. 2023. Koala: A Dialogue Model for
-Academic Researc. https://bair.berkeley.edu/blog/2023/04/03/koala/. Blog post (April 2023). Accessed: Jan. 15, 2026.
-[64] Angkush Kumar Ghosh, Melanie Rentzsch, and Sharifu Ura. 2025. Fostering Empathy in AI-Driven Co-Creation of CAD Models. Procedia CIRP 134
-(2025), 741–746.
+[27] Júlio G Campos, Grettel M Garcıa, Jefferson A de Sousa, Eduardo TL Corseuil, Yenier T Izquierdo, Melissa Lemos, and Marco A Casanova. 2025. Text-to-SQL Experiments with Engineering Data Extracted from CAD Files. In Proceedings of the 27th International Conference on Enterprise Information Systems (ICEIS 2025), Vol. 1. 343–350. doi:10.5220/0013436800003929
+
+[28] Ata Çelen, Guo Han, Konrad Schindler, Luc Van Gool, Iro Armeni, Anton Obukhov, and Xi Wang. 2024. I-design: Personalized llm interior designer. In European Conference on Computer Vision. Springer, 217–234.
+
+[29] Angel X Chang, Thomas Funkhouser, Leonidas Guibas, Pat Hanrahan, Qixing Huang, Zimo Li, Silvio Savarese, Manolis Savva, Shuran Song, Hao Su, et al. 2015. Shapenet: An information-rich 3d model repository. arXiv preprint arXiv:1512.03012 (2015).
+
+[30] Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, et al. 2024. A survey on evaluation of large language models. ACM TIST 15, 3 (2024), 1–45.
+
+[31] Jiali Chen, Xusen Hei, HongFei Liu, Yuancheng Wei, Zikun Deng, Jiayuan Xie, Yi Cai, and Li Qing. 2025. CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction. In ACL.
+
+[32] Lichang Chen, Shiyang Li, Jun Yan, Hai Wang, Kalpa Gunaratna, Vikas Yadav, Zheng Tang, Vijay Srinivasan, Tianyi Zhou, Heng Huang, et al. 2023. AlpaGasus: Training a Better Alpaca with Fewer Data. In ICLR. Manuscript submitted to ACM 30 Zhang et al.
+
+[33] Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde De Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, et al. 2021. Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374 (2021).
+
+[34] Zhe Chen, Weiyun Wang, Yue Cao, Yangzhou Liu, Zhangwei Gao, Erfei Cui, Jinguo Zhu, Shenglong Ye, Hao Tian, Zhaoyang Liu, et al. 2024. Expanding performance boundaries of open-source multimodal models with model, data, and test-time scaling. arXiv preprint arXiv:2412.05271 (2024).
+
+[35] Zhe Chen, Jiannan Wu, Wenhai Wang, Weijie Su, Guo Chen, Sen Xing, Muyan Zhong, Qinglong Zhang, Xizhou Zhu, Lewei Lu, et al. 2024. Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks. In CVPR. 24185–24198.
+
+[36] Wen Cheng, Ke Sun, Xinyu Zhang, and Wei Wang. 2025. Security attacks on llm-based code completion tools. In AAAI, Vol. 39. 23669–23677.
+
+[37]  Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E Gonzalez, et al. 2023. Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality, March 2023. https:// lmsys.org/ blog/ 2023-03-30-vicuna 3, 5 (2023). Accessed: Jan. 15, 2026.
+
+[38] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2023. Palm: Scaling language modeling with pathways. JMLR 24, 240 (2023), 1–113.
+
+[39] Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, et al. 2024. Scaling instruction-finetuned language models. JMLR 25, 70 (2024), 1–53.
+
+[40] Blender Online Community. 2024. Blender – a 3D modelling and rendering package. https://www.blender.org [Computer software] (Version 4.1), Accessed: Jan. 15, 2026.
+
+[41] Amirmohammad Daareyni, Antti Martikkala, Hossein Mokhtarian, and Iñigo Flores Ituarte. 2025. Generative AI meets CAD: enhancing engineering design to manufacturing processes with large language models. The International Journal of Advanced Manufacturing Technology (2025), 1–10.
+
+[42] Damai Dai, Chengqi Deng, Chenggang Zhao, Rx Xu, Huazuo Gao, Deli Chen, Jiashi Li, Wangding Zeng, Xingkai Yu, Y Wu, et al. 2024. DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models. In ACL (Long Papers). 1280–1297.
+
+[43] Wenliang Dai, Junnan Li, Dongxu Li, Anthony Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale N Fung, and Steven Hoi. 2023. Instructblip: Towards general-purpose vision-language models with instruction tuning. Advances in neural information processing systems 36 (2023), 49250–49267.
+
+[44] Badhan Chandra Das, M Hadi Amini, and Yanzhao Wu. 2025. Security and privacy challenges of large language models: A survey. Comput. Surveys 57, 6 (2025), 1–39.
+
+[45] Yann N Dauphin, Angela Fan, Michael Auli, and David Grangier. 2017. Language modeling with gated convolutional networks. In ICML. 933–941.
+
+[46]  Mostafa Dehghani, Josip Djolonga, Basil Mustafa, Piotr Padlewski, Jonathan Heek, Justin Gilmer, Andreas Peter Steiner, Mathilde Caron, Robert Geirhos, Ibrahim Alabdulmohsin, et al. 2023. Scaling vision transformers to 22 billion parameters. In ICML. 7480–7512.
+
+[47] Haoxuan Deng, Samir Khan, and John Ahmet Erkoyuncu. 2024. An Investigation on Utilizing Large Language Model for Industrial Computer-Aided Design Automation. Procedia CIRP 128 (2024), 221–226. 34th CIRP Design Conference.
+
+[48] Ismail Dergaa, Karim Chamari, Piotr Zmijewski, and Helmi Ben Saad. 2023. From human writing to artificial intelligence generated text: examining the prospects and potential threats of ChatGPT in academic writing. Biology of sport 40, 2 (2023), 615–622.
+
+[49] Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. 2023. Qlora: Efficient finetuning of quantized llms. NeurIPS 36 (2023), 10088–10115.
+
+[50] Anna C Doris, Md Ferdous Alam, Amin Heyrani Nobari, and Faez Ahmed. 2025. Cad-coder: An open-source vision-language model for computeraided design code generation. In International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, Vol. 89220. American Society of Mechanical Engineers, V03AT03A031.
+
+[51] Anna C Doris, Daniele Grandi, Ryan Tomich, Md Ferdous Alam, Mohammadmehdi Ataei, Hyunmin Cheong, and Faez Ahmed. 2025. Designqa: A multimodal benchmark for evaluating large language models’ understanding of engineering documentation. JCISE 25, 2 (2025), 021009.
+
+[52] Danny Driess, Fei Xia, Mehdi SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, et al. 2023. PaLM-E: An Embodied Multimodal Language Model. In ICML. 8469–8488.
+
+[53] Changyu Du, Sebastian Esser, Stavros Nousias, and André Borrmann. 2026. Text2BIM: Generating Building Models Using a Large Language Model-Based Multiagent Framework. Journal of Computing in Civil Engineering 40, 2 (2026), 04025142.
+
+[54] Nan Du, Yanping Huang, Andrew M Dai, Simon Tong, Dmitry Lepikhin, Yuanzhong Xu, Maxim Krikun, Yanqi Zhou, Adams Wei Yu, Orhan Firat, et al. 2022. Glam: Efficient scaling of language models with mixture-of-experts. In ICML. 5547–5569.
+
+[55] Yuhao Du, Shunian Chen, Wenbo Zan, Peizhao Li, Mingxuan Wang, Dingjie Song, Bo Li, Yan Hu, and Benyou Wang. 2024. BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement. arXiv preprint arXiv:2412.14203 (2024).
+
+[56] Mohamed Elrefaie, Florin Morar, Angela Dai, and Faez Ahmed. 2024. Drivaernet++: A large-scale multimodal car dataset with computational fluid dynamics simulations and deep learning benchmarks. NeurIPS 37 (2024), 499–536.
+
+[57] Mohamed Elrefaie, Janet Qian, Raina Wu, Qian Chen, Angela Dai, and Faez Ahmed. 2025. AI agents in engineering design: a multi-agent framework for aesthetic and aerodynamic car design. In IDETC/CIE, Vol. 89237.
+
+[58] Haoqiang Fan, Hao Su, and Leonidas J Guibas. 2017. A point set generation network for 3d object reconstruction from a single image. In CVPR. 605–613.
+
+[59] Rinon Gal, Or Patashnik, Haggai Maron, Amit H Bermano, Gal Chechik, and Daniel Cohen-Or. 2022. Stylegan-nada: Clip-guided domain adaptation of image generators. TOG 41, 4 (2022), 1–13.
+
+[60] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, Horace He, Anish Thite, Noa Nabeshima, et al. 2020. The pile: An 800gb dataset of diverse text for language modeling. arXiv preprint arXiv:2101.00027 (2020).
+
+[61] Zhangwei Gao, Zhe Chen, Erfei Cui, Yiming Ren, Weiyun Wang, Jinguo Zhu, Hao Tian, Shenglong Ye, Junjun He, Xizhou Zhu, et al. 2024. Mini-InternVL: a flexible-transfer pocket multi-modal model with 5% parameters and 90% performance. Visual Intelligence 2, 1 (2024), 1–17.
+
+[62] Oihana Garcia, Kerman López de Calle, and Jon Ander Sarasua. 2025. Do LLMs understand shapes? Exploring STL files for automatic CAD feature recognition. Procedia CIRP 133 (2025), 126–131.
+
+[63] Xinyang Geng, Arnav Gudibande, Hao Liu, Eric Wallace, Pieter Abbeel, Sergey Levine, and Dawn Song. 2023. Koala: A Dialogue Model for Academic Researc. https://bair.berkeley.edu/blog/2023/04/03/koala/. Blog post (April 2023). Accessed: Jan. 15, 2026.
+
+[64] Angkush Kumar Ghosh, Melanie Rentzsch, and Sharifu Ura. 2025. Fostering Empathy in AI-Driven Co-Creation of CAD Models. Procedia CIRP 134 (2025), 741–746.
+
 [65] Andrew S Glassner. 1989. An introduction to ray tracing. Morgan Kaufmann.
-[66] Team GLM, Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, et al. 2024. Chatglm:
-A family of large language models from glm-130b to glm-4 all tools. arXiv preprint arXiv:2406.12793 (2024).
-[67] [68] Xavier Glorot, Antoine Bordes, and Yoshua Bengio. 2011. Deep sparse rectifier neural networks. In AISTATS. 315–323.
-Google DeepMind. 2025. Gemini 3 Pro – Best for Complex Tasks and Bringing Creative Concepts to Life. https://chatlyai.app/models/gemini-3-pro.
-Accessed: Jan. 15, 2026.
-[69] Prashant Govindarajan, Davide Baldelli, Jay Pathak, Quentin Fournier, and Sarath Chandar. 2026. Cadmium: Fine-tuning code language models for
-text-driven sequential cad design. Transactions on Machine Learning Research (2026).
-[70] Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan
-Schelten, Alex Vaughan, et al. 2024. The llama 3 herd of models. arXiv preprint arXiv:2407.21783 (2024).
-[71] Yandong Guan, Xilin Wang, XiMing Xing, Jing Zhang, Dong Xu, and Qian Yu. 2025. CAD-Coder: Text-to-CAD Generation with Chain-of-Thought
-and Geometric Reward. In The Thirty-ninth Annual Conference on Neural Information Processing Systems.
-[72] GP Gujarathi and Y-S Ma. 2011. Parametric CAD/CAE integration using a common data model. Journal of Manufacturing Systems 30, 3 (2011),
-118–132.
+
+[66] Team GLM, Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, et al. 2024. Chatglm: A family of large language models from glm-130b to glm-4 all tools. arXiv preprint arXiv:2406.12793 (2024).
+[67] 
+[68] Xavier Glorot, Antoine Bordes, and Yoshua Bengio. 2011. Deep sparse rectifier neural networks. In AISTATS. 315–323.
+Google DeepMind. 2025. 
+Gemini 3 Pro – Best for Complex Tasks and Bringing Creative Concepts to Life. https://chatlyai.app/models/gemini-3-pro. Accessed: Jan. 15, 2026.
+
+[69] Prashant Govindarajan, Davide Baldelli, Jay Pathak, Quentin Fournier, and Sarath Chandar. 2026. Cadmium: Fine-tuning code language models for text-driven sequential cad design. Transactions on Machine Learning Research (2026).
+
+[70] Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Alex Vaughan, et al. 2024. The llama 3 herd of models. arXiv preprint arXiv:2407.21783 (2024).
+
+[71] Yandong Guan, Xilin Wang, XiMing Xing, Jing Zhang, Dong Xu, and Qian Yu. 2025. CAD-Coder: Text-to-CAD Generation with Chain-of-Thought and Geometric Reward. In The Thirty-ninth Annual Conference on Neural Information Processing Systems.
+
+[72] GP Gujarathi and Y-S Ma. 2011. Parametric CAD/CAE integration using a common data model. Journal of Manufacturing Systems 30, 3 (2011), 118–132.
+
 [73] Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Ruoyu Zhang, Runxin Xu, Qihao Zhu, Shirong Ma, Peiyi Wang, Xiao Bi, et al. 2025.
 Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning. arXiv preprint arXiv:2501.12948 (2025).
 [74] Daya Guo, Qihao Zhu, Dejian Yang, Zhenda Xie, Kai Dong, Wentao Zhang, Guanting Chen, Xiao Bi, Yu Wu, YK Li, et al. 2024. DeepSeek-Coder:
