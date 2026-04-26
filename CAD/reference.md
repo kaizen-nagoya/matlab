@@ -1,55 +1,57 @@
-References
-[1] Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao,
-Harkirat Behl, et al. 2024. Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone. arXiv:2404.14219 [cs.CL]
-[2] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam
-Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023).
-[3] Pravesh Agrawal, Szymon Antoniak, Emma Bou Hanna, Baptiste Bout, Devendra Chaplot, Jessica Chudnovsky, Diogo Costa, Baudouin De Monicault,
-Saurabh Garg, Theophile Gervet, et al. 2024. Pixtral 12B. arXiv preprint arXiv:2410.07073 (2024).
-Manuscript submitted to ACM
-Large Language Models for Computer-Aided Design: A Survey 29
-[4] Md Ferdous Alam and Faez Ahmed. 2025. GenCAD: Image-Conditioned Computer-Aided Design Generation with Transformer-Based Contrastive
-Representation and Diffusion Priors. Transactions on Machine Learning Research (2025).
-[5] STĂNCIOIU Alin and Elena Loredana STĂNCIOIU. 2024. The evolution and impact of cad in modern industries: a comprehensive review. Fiability
-& Durability/Fiabilitate si Durabilitate 33, 1 (2024), 68.
-[6] Kamel Alrashedy, Pradyumna Tambwekar, Zulfiqar Haider Zaidi, Megan Langwasser, Wei Xu, and Matthew Gombolay. 2024. Generating CAD
-Code with Vision-Language Models for 3D Designs. In ICLR.
-[7] Benjamin Alt, Florian Stöckl, Silvan Müller, Christopher Braun, Julian Raible, Saad Alhasan, Oliver Rettig, Lukas Ringle, Darko Katic, Rainer Jäkel,
-et al. 2024. RoboGrind: Intuitive and Interactive Surface Treatment with Industrial Robots. In ICRA. 2140–2146.
-[8] [9] Robert Amor and Johannes Dimyadi. 2021. The promise of automated compliance checking. Developments in the built environment 5 (2021), 100039.
-Rohan Anil, Andrew M Dai, Orhan Firat, Melvin Johnson, Dmitry Lepikhin, Alexandre Passos, Siamak Shakeri, Emanuel Taropa, Paige Bailey,
-Zhifeng Chen, et al. 2023. Palm 2 technical report. arXiv preprint arXiv:2305.10403 (2023).
-[10] Yadagiri Annepaka and Partha Pakray. 2025. Large language models: a survey of their development, capabilities, and applications. Knowledge and
-Information Systems 67, 3 (2025), 2967–3022.
-[11] Anonymous. 2023. ShareGPT Vicuna Unfiltered Dataset. https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered. Accessed:
-Jan. 15, 2026.
+# References
+
+[1] Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao, Harkirat Behl, et al. 2024. Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone. arXiv:2404.14219 [cs.CL]
+
+[2] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023).
+
+[3] Pravesh Agrawal, Szymon Antoniak, Emma Bou Hanna, Baptiste Bout, Devendra Chaplot, Jessica Chudnovsky, Diogo Costa, Baudouin De Monicault, Saurabh Garg, Theophile Gervet, et al. 2024. Pixtral 12B. arXiv preprint arXiv:2410.07073 (2024). Manuscript submitted to ACM Large Language Models for Computer-Aided Design: A Survey 29
+
+[4] Md Ferdous Alam and Faez Ahmed. 2025. GenCAD: Image-Conditioned Computer-Aided Design Generation with Transformer-Based Contrastive Representation and Diffusion Priors. Transactions on Machine Learning Research (2025).
+
+[5] STĂNCIOIU Alin and Elena Loredana STĂNCIOIU. 2024. The evolution and impact of cad in modern industries: a comprehensive review. Fiability & Durability/Fiabilitate si Durabilitate 33, 1 (2024), 68.
+
+[6] Kamel Alrashedy, Pradyumna Tambwekar, Zulfiqar Haider Zaidi, Megan Langwasser, Wei Xu, and Matthew Gombolay. 2024. Generating CAD Code with Vision-Language Models for 3D Designs. In ICLR.
+
+[7] Benjamin Alt, Florian Stöckl, Silvan Müller, Christopher Braun, Julian Raible, Saad Alhasan, Oliver Rettig, Lukas Ringle, Darko Katic, Rainer Jäkel, et al. 2024. RoboGrind: Intuitive and Interactive Surface Treatment with Industrial Robots. In ICRA. 2140–2146.
+
+[8] Robert Amor and Johannes Dimyadi. 2021. The promise of automated compliance checking. Developments in the built environment 5 (2021), 100039. R
+
+[9]  Rohan Anil, Andrew M Dai, Orhan Firat, Melvin Johnson, Dmitry Lepikhin, Alexandre Passos, Siamak Shakeri, Emanuel Taropa, Paige Bailey, Zhifeng Chen, et al. 2023. Palm 2 technical report. arXiv preprint arXiv:2305.10403 (2023).
+
+[10] Yadagiri Annepaka and Partha Pakray. 2025. Large language models: a survey of their development, capabilities, and applications. Knowledge and Information Systems 67, 3 (2025), 2967–3022.
+
+[11] Anonymous. 2023. ShareGPT Vicuna Unfiltered Dataset. https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered. Accessed: Jan. 15, 2026.
+
 [12] Anthropic. 2024. The Claude 3 Model Family: Opus, Sonnet, Haiku. https://api.semanticscholar.org/CorpusID:268232499 Accessed: Jan. 15, 2026.
+
 [13] Anthropic. 2024. Introducing Claude 3.5 Sonnet. https://www.anthropic.com/news/claude-3-5-sonnet Accessed: Jan. 15, 2026.
-[14] Zhangir Azerbayev, Hailey Schoelkopf, Keiran Paster, Marco Dos Santos, Stephen McAleer, Albert Q Jiang, Jia Deng, Stella Biderman, and Sean
-Welleck. 2024. Llemma: An Open Language Model for Mathematics. In ICLR.
-[15] Akshay Badagabettu, Sai Sravan Yarlagadda, and Amir Barati Farimani. 2024. Query2CAD: Generating CAD models using natural language queries.
-CoRR abs/2406.00144 (2024). arXiv:2406.00144
-[16] Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, et al. 2023. Qwen technical report.
-arXiv preprint arXiv:2309.16609 (2023).
-[17] Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang, Jun Tang, et al. 2025. Qwen2. 5-vl
-technical report. arXiv preprint arXiv:2502.13923 (2025).
-[18] Jason Baumgartner, Savvas Zannettou, Brian Keegan, Megan Squire, and Jeremy Blackburn. 2020. The pushshift reddit dataset. In ICWSM, Vol. 14.
-830–839.
-[19] Marco Bellagente, Jonathan Tow, Dakota Mahan, Duy Phung, Maksym Zhuravinskyi, Reshinth Adithyan, James Baicoianu, Ben Brooks, Nathan
-Cooper, Ashish Datta, et al. 2024. Stable lm 2 1.6 b technical report. arXiv preprint arXiv:2402.17834 (2024).
-[20] Xiao Bi, Deli Chen, Guanting Chen, Shanhuang Chen, Damai Dai, Chengqi Deng, Honghui Ding, Kai Dong, Qiushi Du, Zhe Fu, et al. 2024. DeepSeek
-LLM: Scaling Open-Source Language Models with Longtermism. arXiv e-prints (2024), arXiv–2401.
-[21] Stella Biderman, Hailey Schoelkopf, Quentin Gregory Anthony, Herbie Bradley, Kyle O’Brien, Eric Hallahan, Mohammad Aflah Khan, Shivanshu
-Purohit, USVSN Sai Prashanth, Edward Raff, et al. 2023. Pythia: A suite for analyzing large language models across training and scaling. In ICML.
-2397–2430.
-[22] Stephen Brade, Bryan Wang, Mauricio Sousa, Sageev Oore, and Tovi Grossman. 2023. Promptify: Text-to-image generation through interactive
-prompt exploration with large language models. In UIST. 1–14.
-[23] [24] Tim Brooks, Aleksander Holynski, and Alexei A Efros. 2023. Instructpix2pix: Learning to follow image editing instructions. In CVPR. 18392–18402.
-Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry,
-Amanda Askell, et al. 2020. Language models are few-shot learners. NeruIPS 33 (2020), 1877–1901.
-[25] Zheng Cai, Maosong Cao, Haojiong Chen, Kai Chen, Keyu Chen, Xin Chen, Xun Chen, Zehui Chen, Zhi Chen, Pei Chu, et al. 2024. Internlm2
-technical report. arXiv preprint arXiv:2403.17297 (2024).
-[26] Bradley Camburn, Vimal Viswanathan, Julie Linsey, David Anderson, Daniel Jensen, Richard Crawford, Kevin Otto, and Kristin Wood. 2017. Design
-prototyping methods: state of the art in strategies, techniques, and guidelines. Design Science 3 (2017), e13.
+
+[14] Zhangir Azerbayev, Hailey Schoelkopf, Keiran Paster, Marco Dos Santos, Stephen McAleer, Albert Q Jiang, Jia Deng, Stella Biderman, and Sean Welleck. 2024. Llemma: An Open Language Model for Mathematics. In ICLR.
+
+[15] Akshay Badagabettu, Sai Sravan Yarlagadda, and Amir Barati Farimani. 2024. Query2CAD: Generating CAD models using natural language queries. CoRR abs/2406.00144 (2024). arXiv:2406.00144
+
+[16] Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, et al. 2023. Qwen technical report. arXiv preprint arXiv:2309.16609 (2023).
+
+[17] Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang, Jun Tang, et al. 2025. Qwen2. 5-vl technical report. arXiv preprint arXiv:2502.13923 (2025).
+
+[18] Jason Baumgartner, Savvas Zannettou, Brian Keegan, Megan Squire, and Jeremy Blackburn. 2020. The pushshift reddit dataset. In ICWSM, Vol. 14.830–839.
+
+[19] Marco Bellagente, Jonathan Tow, Dakota Mahan, Duy Phung, Maksym Zhuravinskyi, Reshinth Adithyan, James Baicoianu, Ben Brooks, Nathan Cooper, Ashish Datta, et al. 2024. Stable lm 2 1.6 b technical report. arXiv preprint arXiv:2402.17834 (2024).
+
+[20] Xiao Bi, Deli Chen, Guanting Chen, Shanhuang Chen, Damai Dai, Chengqi Deng, Honghui Ding, Kai Dong, Qiushi Du, Zhe Fu, et al. 2024. DeepSeek LLM: Scaling Open-Source Language Models with Longtermism. arXiv e-prints (2024), arXiv–2401.
+
+[21] Stella Biderman, Hailey Schoelkopf, Quentin Gregory Anthony, Herbie Bradley, Kyle O’Brien, Eric Hallahan, Mohammad Aflah Khan, Shivanshu Purohit, USVSN Sai Prashanth, Edward Raff, et al. 2023. Pythia: A suite for analyzing large language models across training and scaling. In ICML. 2397–2430.
+
+[22] Stephen Brade, Bryan Wang, Mauricio Sousa, Sageev Oore, and Tovi Grossman. 2023. Promptify: Text-to-image generation through interactive prompt exploration with large language models. In UIST. 1–14.
+
+[23] Tim Brooks, Aleksander Holynski, and Alexei A Efros. 2023. Instructpix2pix: Learning to follow image editing instructions. In CVPR. 18392–18402.
+
+[24]  Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. NeruIPS 33 (2020), 1877–1901.
+
+[25] Zheng Cai, Maosong Cao, Haojiong Chen, Kai Chen, Keyu Chen, Xin Chen, Xun Chen, Zehui Chen, Zhi Chen, Pei Chu, et al. 2024. Internlm2 technical report. arXiv preprint arXiv:2403.17297 (2024).
+
+[26] Bradley Camburn, Vimal Viswanathan, Julie Linsey, David Anderson, Daniel Jensen, Richard Crawford, Kevin Otto, and Kristin Wood. 2017. Design prototyping methods: state of the art in strategies, techniques, and guidelines. Design Science 3 (2017), e13.
+
 [27] Júlio G Campos, Grettel M Garcıa, Jefferson A de Sousa, Eduardo TL Corseuil, Yenier T Izquierdo, Melissa Lemos, and Marco A Casanova. 2025.
 Text-to-SQL Experiments with Engineering Data Extracted from CAD Files. In Proceedings of the 27th International Conference on Enterprise
 Information Systems (ICEIS 2025), Vol. 1. 343–350. doi:10.5220/0013436800003929
