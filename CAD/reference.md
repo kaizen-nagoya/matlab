@@ -536,33 +536,60 @@ Learning a unified representation of language, images, and point clouds for 3d u
 Open large-scale language models. arXiv preprint arXiv:2309.10305 (2023).
 [269] An Yang, Baosong Yang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang Zhou, Chengpeng Li, Chengyuan Li, Dayiheng Liu, Fei Huang, et al. 2024.
 Qwen2 Technical Report. arXiv:2407.10671 [cs.CL]
-[270] Xiaocheng Yang, Bingsen Chen, and Yik-Cheung Tam. 2024. Arithmetic Reasoning with LLM: Prolog Generation & Permutation. In NAACL (Short
-Papers). 699–710.
-[271] Fukun Yin, Xin Chen, Chi Zhang, Biao Jiang, Zibo Zhao, Wen Liu, Gang Yu, and Tao Chen. 2025. Shapegpt: 3d shape generation with a unified
-multi-modal language model. IEEE TMM 27 (2025), 4107–4120. doi:10.1109/TMM.2025.3535389
-[272] Shukang Yin, Chaoyou Fu, Sirui Zhao, Ke Li, Xing Sun, Tong Xu, and Enhong Chen. 2024. A survey on multimodal large language models. National
-Science Review 11, 12 (2024), nwae403.
-[273] Huaquan Ying and Rafael Sacks. 2024. From Automatic to Autonomous: A Large Language Model-driven Approach for Generic Building Compliance
-Checking. In Proceedings of the CIB W78 Conference.
-[274] Yang You, Mikaela Angelina Uy, Jiaqi Han, Rahul Thomas, Haotong Zhang, Yi Du, Hansheng Chen, Francis Engelmann, Suya You, and Leonidas
-Guibas. 2025. Img2cad: Reverse engineering 3d cad models from images through vlm-assisted conditional factorization. In Proceedings of the SIGGRAPH Asia 2025 Conference Papers. 1–12.
+
+[270] Xiaocheng Yang, Bingsen Chen, and Yik-Cheung Tam. 2024. Arithmetic Reasoning with LLM: Prolog Generation & Permutation. In NAACL (Short Papers). 699–710.
+
+[271] Fukun Yin, Xin Chen, Chi Zhang, Biao Jiang, Zibo Zhao, Wen Liu, Gang Yu, and Tao Chen. 2025. Shapegpt: 3d shape generation with a unified multi-modal language model. IEEE TMM 27 (2025), 4107–4120. doi:10.1109/TMM.2025.3535389
+
+[272] Shukang Yin, Chaoyou Fu, Sirui Zhao, Ke Li, Xing Sun, Tong Xu, and Enhong Chen. 2024. A survey on multimodal large language models. National Science Review 11, 12 (2024), nwae403.
+
+[273] Huaquan Ying and Rafael Sacks. 2024. From Automatic to Autonomous: A Large Language Model-driven Approach for Generic Building Compliance Checking. In Proceedings of the CIB W78 Conference.
+
+[274] Yang You, Mikaela Angelina Uy, Jiaqi Han, Rahul Thomas, Haotong Zhang, Yi Du, Hansheng Chen, Francis Engelmann, Suya You, and Leonidas Guibas. 2025. Img2cad: Reverse engineering 3d cad models from images through vlm-assisted conditional factorization. In Proceedings of the SIGGRAPH Asia 2025 Conference Papers. 1–12.
+
 [275] Jiahui Yu, Zirui Wang, Vijay Vasudevan, Legg Yeung, Mojtaba Seyedhosseini, and Yonghui Wu. 2022. CoCa: Contrastive Captioners are Image-Text Foundation Models. TMLR (Aug 2022 2022).
+
 [276] Mengqiang Yu, Yujie Sheng, Zhongxu Wan, Shuyu Yang, Muping Sun, and Hongxia Cai. 2024. An intelligent interactive system based on LLM to combine CAD API development with FEA. In ICEMCE. 1749–1755.
+
 [277] Haocheng Yuan, Jing Xu, Hao Pan, Adrien Bousseau, Niloy J. Mitra, and Changjian Li. 2024. CADTalk: An Algorithm and Benchmark for Semantic Commenting of CAD Programs. In CVPR. 3753–3762.
+
 [278] Yu Yuan, Shizhao Sun, Qi Liu, and Jiang Bian. 2025. CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing. In Forty-second International Conference on Machine Learning.
+
 [279] Zhe Yuan, Jianqi Shi, and Yanhong Huang. 2024. OpenECAD: An efficient visual language model for editable 3D-CAD design. Computers & Graphics 124 (2024), 104048.
+
 [280] Chonghui Zhang, Yaoyao Fiona Zhao, and Randous El Haddad. 2024. Understanding the Impact of Applying Large Language Model in Engineering Design Education. JCISE 25, 2 (12 2024), 021008.
-[281] 
-[282] 
-[283] Lvmin Zhang, Anyi Rao, and Maneesh Agrawala. 2023. Adding conditional control to text-to-image diffusion models. In ICCV. 3836–3847. Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q Weinberger, and Yoav Artzi. 2020. BERTScore: Evaluating Text Generation with BERT. In ICLR. Xinlu Zhang, Yujie Lu, Weizhi Wang, An Yan, Jun Yan, Lianke Qin, Heng Wang, Xifeng Yan, William Yang Wang, and Linda Ruth Petzold. 2023. Gpt-4v (ision) as a generalist evaluator for vision-language tasks. arXiv preprint arXiv:2311.01361 (2023).
-[284] 
-[285] Xuanyu Zhang and Qing Yang. 2023. Xuanyuan 2.0: A large chinese financial chat model with hundreds of billions parameters. In CIKM. 4435–4439. Zhanwei Zhang, Junjie Liu, Wenxiao Wang, Binbin Lin, Liang Xie, Chen Shen, Deng Cai, et al. 2025. GeoCAD: Local Geometry-Controllable CAD Generation with Large Language Models. In NeurIPS.
+
+[281] Lvmin Zhang, Anyi Rao, and Maneesh Agrawala. 2023. Adding conditional control to text-to-image diffusion models. In ICCV. 3836–3847. 
+
+[282]Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q Weinberger, and Yoav Artzi. 2020. BERTScore: Evaluating Text Generation with BERT. In ICLR. 
+
+[283] Xinlu Zhang, Yujie Lu, Weizhi Wang, An Yan, Jun Yan, Lianke Qin, Heng Wang, Xifeng Yan, William Yang Wang, and Linda Ruth Petzold. 2023. Gpt-4v (ision) as a generalist evaluator for vision-language tasks. arXiv preprint arXiv:2311.01361 (2023).
+
+[284] Xuanyu Zhang and Qing Yang. 2023. Xuanyuan 2.0: A large chinese financial chat model with hundreds of billions parameters. In CIKM. 4435–4439. 
+
+[285] Zhanwei Zhang, Junjie Liu, Wenxiao Wang, Binbin Lin, Liang Xie, Chen Shen, Deng Cai, et al. 2025.  GeoCAD: Local Geometry-Controllable CAD Generation with Large Language Models. In NeurIPS.
+
 [286] Zhanwei Zhang, Shizhao Sun, Wenxiao Wang, Deng Cai, and Jiang Bian. 2025. FlexCAD: Unified and Versatile Controllable CAD Generation with Fine-tuned Large Language Models. In ICLR.
+
 [287] Haiyan Zhao, Hanjie Chen, Fan Yang, Ninghao Liu, Huiqi Deng, Hengyi Cai, Shuaiqiang Wang, Dawei Yin, and Mengnan Du. 2024. Explainability for large language models: A survey. ACM TIST 15, 2 (2024), 1–38.
+
 [288] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 1, 2 (2023).
+
 [289] Junwen Zheng and Martin Fischer. 2023. Dynamic prompt-based virtual assistant framework for BIM information search. Automation in Construction 155 (2023), 105067.
+
 [290] Junhao Zheng, Shengjie Qiu, Chengming Shi, and Qianli Ma. 2025. Towards lifelong learning of large language models: A survey. Comput. Surveys 57, 8 (2025), 1–35.
+
 [291] Baichuan Zhou, Ying Hu, Xi Weng, Junlong Jia, Jie Luo, Xien Liu, Ji Wu, and Lei Huang. 2024. TinyLLaVA: A Framework of Small-scale Large Multimodal Models. arXiv:2402.14289 [cs.LG]
+
 [292] Chunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao, Xuezhe Ma, Avia Efrat, Ping Yu, Lili Yu, et al. 2023. Lima: Less is more for alignment. NeurIPS 36 (2023), 55006–55021.
+
 [293] Jiwei Zhou and Jorge D. Camba. 2025. The status, evolution, and future challenges of multimodal large language models (LLMs) in parametric CAD. Expert Systems with Applications 282 (04 2025), 127520. doi:10.1016/j.eswa.2025.127520 Manuscript submitted to ACM Large Language Models for Computer-Aided Design: A Survey 39
+
 [294] Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny. 2024. Minigpt-4: Enhancing vision-language understanding with advanced large language models. In ICLR.
+
+
+
+
+Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela
+
