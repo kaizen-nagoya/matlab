@@ -1,5 +1,7 @@
 Yann N Dauphin, Angela Fan, Michael Auli, and David Grangier. 2017. Language modeling with gated convolutional networks. In ICML. 933–941.
 
+Large Language Models for Computer-Aided Design: A Survey Licheng Zhang, Bach Le, Naveed Akhtar, Siew-Kei Lam, Tuan Ngo https;//arxiv.com/abs/2505.08137
+
 # References
 
 [1] Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao, Harkirat Behl, et al. 2024. Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone. arXiv:2404.14219 [cs.CL]
