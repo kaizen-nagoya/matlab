@@ -1759,4 +1759,207 @@ Toyota Corolla Touring public materials confirm Toyota Safety Sense with millime
 [1]: https://iotnews.jp/maas-case/74061/?utm_source=chatgpt.com "トヨタ・デンソーの自動運転車にルネサスの「R-Car」SoCと「RH850」マイコンが採用 | IoTNEWS AI+"
 [2]: https://toyota.jp/corollatouring/safety/index.html?utm_source=chatgpt.com "トヨタ カローラ ツーリング | 安全性能 | トヨタ自動車WEBサイト"
 
+# Q8 Corolla 2024 wiring + ECU network + chip map
+A8 
+For a **2024 Toyota Corolla Touring (Japan gasoline wagon)**, no public OEM schematic exists, so the most accurate deliverable is a **reverse-engineered reference architecture** based on Toyota manuals, public feature disclosures, and common Toyota/Denso/Renesas design patterns. The key dimensions are **12V power distribution**, **CAN/LIN network domains**, **ADAS sensor links**, and **ECU semiconductor mapping**.
 
+Toyota public materials confirm systems such as **Toyota Safety Sense**, **millimeter-wave radar + monocular camera**, EPS, ABS/VSC, and connected features on Corolla Touring. ([トヨタマニュアル][1])
+
+## Best overall
+
+---
+
+# 1. High-Level Wiring Architecture
+
+## PRODUCT COMPARISON TABLE
+
+| Domain       | Primary Power            | Main Network               | Typical Wire Gauge | Main Loads                 |
+| ------------ | ------------------------ | -------------------------- | ------------------ | -------------------------- |
+| Powertrain   | 12V battery + alternator | CAN                        | Medium-heavy       | ECU, injectors, coils      |
+| Chassis      | 12V                      | CAN                        | Medium             | ABS, EPS, parking brake    |
+| Body         | 12V                      | CAN + LIN                  | Light-medium       | locks, windows, lamps      |
+| Infotainment | 12V ACC/B+               | CAN + USB + RF             | Light              | display, audio, telematics |
+| ADAS         | 12V regulated            | CAN + private sensor links | Light              | radar, camera              |
+| Diagnostics  | 12V via OBD              | CAN                        | Light              | service tools              |
+
+---
+
+# 2. Main Harness Layout
+
+## Front Engine Room Harness
+
+* Battery to fuse box
+* Alternator charge line
+* Starter line
+* ECU connectors
+* Injector / ignition coil branches
+* Cooling fan
+* ABS hydraulic unit
+* Headlamps
+* Horn
+
+## Instrument Panel Harness
+
+* BCM
+* Cluster
+* HVAC controls
+* Steering column switches
+* OBD-II connector
+* Airbag harness branches
+* Display audio
+
+## Floor / Cabin Harness
+
+* Seat sensors
+* Pretensioners
+* Rear doors
+* Fuel pump
+* Rear lamps
+* Tailgate electronics
+
+## Door Harnesses
+
+* Power windows
+* Locks
+* Mirror adjust/heater
+* Speakers
+
+## Roof Harness
+
+* Dome lamps
+* Microphone
+* Antenna
+* Optional sensors
+
+---
+
+# 3. ECU Network Topology (Most Likely)
+
+```text
+                [Radar ECU/Sensor]
+                       |
+                [Forward Camera]
+                       |
+                ===== Main CAN =====
+                       |
+[ECM]--[TCM/CVT]--[Gateway/BCM]--[ABS/VSC]--[EPS]
+                       |
+             [Cluster] [HVAC] [Telematics]
+                       |
+                  LIN Subnets
+         (doors, seat, rain sensor, lamps)
+```
+
+Toyota manuals confirm ABS/VSC/EPS coordination and Toyota Safety Sense functions. ([トヨタマニュアル][2])
+
+---
+
+# 4. ECU-by-ECU Chip Map (Most Likely)
+
+## PRODUCT COMPARISON TABLE
+
+| ECU / Module   | Likely Tier-1                     | Likely MCU / Processor Vendors            | Other Silicon             |
+| -------------- | --------------------------------- | ----------------------------------------- | ------------------------- |
+| Engine ECU     | Denso                             | Renesas RH850 / RL78                      | injector drivers, CAN PHY |
+| CVT Controller | Aisin / Denso                     | Renesas                                   | motor/solenoid drivers    |
+| BCM / Gateway  | Denso / Tokai Rika                | Renesas / NXP                             | LIN/CAN transceivers      |
+| ABS / VSC      | Advics                            | Infineon / Renesas / NXP                  | pressure ASICs            |
+| EPS ECU        | JTEKT                             | Renesas / Infineon                        | 3-phase gate drivers      |
+| Airbag ECU     | Denso / Autoliv ecosystem         | NXP / Infineon                            | MEMS crash sensors        |
+| Cluster        | Denso / Nippon Seiki              | Renesas / NXP                             | LCD driver, EEPROM        |
+| Display Audio  | Panasonic / Fujitsu Ten ecosystem | Qualcomm / Renesas / NXP                  | DRAM, NAND                |
+| Radar          | Denso                             | NXP / Infineon                            | RF front-end              |
+| Camera         | Denso / Toyota supplier chain     | Renesas / Mobileye / image sensor vendors | PMIC, DDR                 |
+
+---
+
+# 5. Semiconductor Quantity Estimate
+
+## PRODUCT COMPARISON TABLE
+
+| Chip Type                    | Estimated Count |
+| ---------------------------- | --------------- |
+| MCUs / processors            | 25–60           |
+| Memories                     | 20–70           |
+| Power ICs                    | 80–250          |
+| Sensors (MEMS/pressure/temp) | 40–120          |
+| Discretes / MOSFET / LEDs    | 500–2,000       |
+| Total semiconductor devices  | ~800–3,000      |
+
+---
+
+# 6. Most Important CAN / LIN Nodes
+
+## CAN High Priority
+
+* Engine ECU
+* ABS/VSC
+* EPS
+* Cluster
+* Gateway
+* ADAS modules
+
+## LIN Subnet Typical
+
+* Door modules
+* Mirror motors
+* Rain/light sensor
+* Seat modules
+* Smart key antennas
+* HVAC flap motors
+
+---
+
+# 7. Power Distribution Path
+
+```text
+12V Battery
+   |
+Main Fuse Box
+   |---- Engine Room Fuse Box
+   |---- Cabin Junction Block
+   |---- BCM Smart Power Distribution
+   |---- EPS High Current Feed
+   |---- ABS Pump Feed
+   |---- Audio / Accessory
+```
+
+---
+
+# 8. Failure Hotspots (Real World)
+
+## PRODUCT COMPARISON TABLE
+
+| Area                    | Typical Risk                  |
+| ----------------------- | ----------------------------- |
+| Door harness flex zones | wire fatigue                  |
+| Ground points           | corrosion / voltage drop      |
+| Camera calibration      | windshield replacement issues |
+| Radar cover area        | bumper repair misalignment    |
+| Battery low voltage     | false DTCs / network errors   |
+| CAN connectors          | intermittent faults           |
+
+---
+
+# 9. My Confidence Ranking (Highest Certainty)
+
+1. **CAN backbone + LIN subnets**
+2. **Renesas-heavy MCU presence**
+3. **Denso integration across multiple ECUs**
+4. **Radar + monocular camera Toyota Safety Sense**
+5. **No Ethernet backbone on mainstream gasoline trim (likely CAN-centric)**
+
+---
+
+# 10. If You Want the Deepest Next Step
+
+I can also generate:
+
+1. **Pin-level wiring diagram (battery to ECU to fuse mapping)**
+2. **Exact probable MCU part numbers by ECU (RH850/F1K, TLE, TPS etc.)**
+3. **CAN message map (IDs, likely signals, diagnostics)**
+4. **Toyota Corolla cyber-security attack surface map**
+5. **How to retrofit Automotive Ethernet / CAN XL into Corolla 2024**
+
+[1]: https://manual.toyota.jp/corollatouring/2404/cv/ja_JP/contents/home.php?utm_source=chatgpt.com "COROLLA TOURING | TOYOTA"
+[2]: https://manual.toyota.jp/corollatouring/2404/cv/ja_JP/contents/vhch04se050420.php?utm_source=chatgpt.com "運転を補助する装置 | COROLLA TOURING | TOYOTA"
