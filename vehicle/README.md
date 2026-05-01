@@ -1963,3 +1963,194 @@ I can also generate:
 
 [1]: https://manual.toyota.jp/corollatouring/2404/cv/ja_JP/contents/home.php?utm_source=chatgpt.com "COROLLA TOURING | TOYOTA"
 [2]: https://manual.toyota.jp/corollatouring/2404/cv/ja_JP/contents/vhch04se050420.php?utm_source=chatgpt.com "運転を補助する装置 | COROLLA TOURING | TOYOTA"
+
+# Q9 CAN message map
+A9 
+For a **2024 Toyota Corolla Touring (Japan gasoline wagon)**, Toyota does **not** publicly publish a full CAN database (DBC) for consumers. Exact arbitration IDs, byte layouts, counters, and checksums are proprietary and can vary by trim, supplier firmware, region, and production month.
+
+So the most useful answer is a **realistic engineering CAN message map**: likely buses, common signal groups, expected traffic patterns, and reverse-engineering workflow. This is appropriate for diagnostics, logging, gateways, test benches, and education.
+
+## Best overall
+
+---
+
+# 1. Likely Network Topology
+
+## PRODUCT COMPARISON TABLE
+
+| Network Segment       | Typical Speed   | Main Nodes                | Purpose                   |
+| --------------------- | --------------- | ------------------------- | ------------------------- |
+| Powertrain CAN        | 500 kbps        | ECM, CVT, ABS, EPS        | torque, speed, drivetrain |
+| Body CAN              | 250–500 kbps    | BCM, cluster, HVAC, doors | comfort/body functions    |
+| ADAS CAN              | 500 kbps        | radar, camera, gateway    | safety signals            |
+| Diagnostics CAN (OBD) | gateway exposed | scan tool, gateway        | service / UDS             |
+| LIN subnets           | 10–20 kbps      | mirrors, seats, sensors   | low-cost local nodes      |
+
+---
+
+# 2. Probable High-Level CAN Message Map
+
+## PRODUCT COMPARISON TABLE
+
+| Arbitration ID Range (Example) | Producer ECU | Consumer ECU(s)   | Likely Content                  | Cycle Time |
+| ------------------------------ | ------------ | ----------------- | ------------------------------- | ---------- |
+| 0x100–0x10F                    | ECM          | CVT, ABS, cluster | engine rpm, torque request      | 10 ms      |
+| 0x110–0x11F                    | CVT          | ECM, cluster      | gear ratio, temp, state         | 20 ms      |
+| 0x120–0x12F                    | ABS/VSC      | ECM, EPS, cluster | wheel speeds, yaw, brake active | 10 ms      |
+| 0x130–0x13F                    | EPS          | ECM, ABS          | steering angle, torque assist   | 10 ms      |
+| 0x140–0x14F                    | BCM          | cluster, HVAC     | ignition mode, doors, lamps     | 100 ms     |
+| 0x150–0x15F                    | Cluster      | BCM               | warnings, display ack           | 100 ms     |
+| 0x160–0x16F                    | HVAC         | BCM               | blower state, temp setpoint     | 100 ms     |
+| 0x170–0x17F                    | Radar        | gateway, ABS      | target status, AEB request      | 20 ms      |
+| 0x180–0x18F                    | Camera       | gateway, cluster  | lane status, TSR, alerts        | 50 ms      |
+| 0x700–0x7FF                    | Diagnostics  | ECU specific      | UDS / OBD requests              | on demand  |
+
+**Note:** IDs are illustrative engineering ranges, not verified Toyota production IDs.
+
+---
+
+# 3. Typical Signals by ECU
+
+## Engine ECU (ECM)
+
+## PRODUCT COMPARISON TABLE
+
+| Signal            | Units | Typical Rate | Notes                  |
+| ----------------- | ----- | ------------ | ---------------------- |
+| Engine RPM        | rpm   | 10 ms        | core broadcast         |
+| Throttle Position | %     | 10 ms        | pedal/throttle         |
+| Coolant Temp      | °C    | 100 ms       | thermal                |
+| Torque Actual     | Nm    | 10 ms        | driveline coordination |
+| MIL Status        | bit   | event        | diagnostics            |
+
+---
+
+## ABS / VSC
+
+## PRODUCT COMPARISON TABLE
+
+| Signal              | Units | Typical Rate |
+| ------------------- | ----- | ------------ |
+| Wheel Speed FL      | km/h  | 10 ms        |
+| Wheel Speed FR      | km/h  | 10 ms        |
+| Wheel Speed RL      | km/h  | 10 ms        |
+| Wheel Speed RR      | km/h  | 10 ms        |
+| Brake Pressure Est. | bar   | 10–20 ms     |
+| Yaw Rate            | deg/s | 10 ms        |
+| VSC Active          | bit   | event        |
+
+---
+
+## EPS
+
+## PRODUCT COMPARISON TABLE
+
+| Signal                 | Units    | Typical Rate |
+| ---------------------- | -------- | ------------ |
+| Steering Angle         | deg      | 10 ms        |
+| Steering Torque Driver | Nm       | 10 ms        |
+| Assist Level           | %        | 20 ms        |
+| EPS Fault              | bitfield | event        |
+
+---
+
+## BCM / Body
+
+## PRODUCT COMPARISON TABLE
+
+| Signal           | Meaning          |
+| ---------------- | ---------------- |
+| Ignition Status  | OFF/ACC/ON/START |
+| Door Ajar States | each door        |
+| Lock Status      | locked/unlocked  |
+| Lamp Status      | head/tail/turn   |
+| Wiper Mode       | off/int/low/high |
+
+---
+
+# 4. ADAS Signals (Toyota Safety Sense-like)
+
+## PRODUCT COMPARISON TABLE
+
+| Source  | Likely Signals                                 |
+| ------- | ---------------------------------------------- |
+| Radar   | target distance, relative speed, TTC           |
+| Camera  | lane lines, vehicle detected, sign recognition |
+| Gateway | FCW request, AEB request                       |
+| Cluster | alert icons, beeper requests                   |
+
+---
+
+# 5. Diagnostic CAN (OBD-II / UDS)
+
+## PRODUCT COMPARISON TABLE
+
+| Service | Purpose                    |
+| ------- | -------------------------- |
+| 0x01    | OBD live data              |
+| 0x03    | emission DTCs              |
+| 0x09    | VIN / vehicle info         |
+| 0x10    | diagnostic session control |
+| 0x22    | read data by identifier    |
+| 0x19    | read DTC info              |
+| 0x2E    | write data (protected)     |
+
+---
+
+# 6. Example Logging Interpretation
+
+```text
+0x120  8 bytes  wheel speeds changing with vehicle speed
+0x100  8 bytes  rpm rises during acceleration
+0x130  8 bytes  steering angle changes while turning
+0x140  8 bytes  door bit toggles when opened
+```
+
+---
+
+# 7. Reverse Engineering Workflow (Legal / Benign)
+
+## PRODUCT COMPARISON TABLE
+
+| Step | Action                               |
+| ---- | ------------------------------------ |
+| 1    | Read bus passively only              |
+| 2    | Log baseline ignition ON             |
+| 3    | Trigger one function at a time       |
+| 4    | Correlate changing bytes             |
+| 5    | Validate scaling over repeated tests |
+| 6    | Build private DBC for lab use        |
+
+---
+
+# 8. Common Tools
+
+## PRODUCT COMPARISON TABLE
+
+| Tool Type       | Examples                       |
+| --------------- | ------------------------------ |
+| USB CAN adapter | PCAN, Kvaser, ValueCAN         |
+| Dev boards      | CANable, STM32 CAN FD boards   |
+| Software        | SavvyCAN, CANalyzer, BUSMASTER |
+| Python libs     | python-can                     |
+
+---
+
+# 9. Important Cautions
+
+* Newer Toyotas may use **gateway filtering** limiting OBD visibility.
+* Some functions are on **private internal buses** not exposed at OBD.
+* Checksums/counters often prevent naive message injection.
+* Safety-critical systems should never be tested on public roads.
+
+---
+
+# 10. If You Want Next-Level Detail
+
+I can also generate:
+
+1. **Probable Corolla 2024 DBC file structure**
+2. **Toyota-style checksum/counter patterns**
+3. **CAN FD / CAN XL migration plan for Corolla**
+4. **Python logger for Corolla OBD passive sniffing**
+5. **ECU-by-ECU arbitration ID map with estimated byte meanings**
