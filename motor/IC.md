@@ -313,3 +313,265 @@ are converging. ([ルネサス][5])
 [4]: https://www.melexis.com/en/product/mlx81325/smart-lin-motor-driver?utm_source=chatgpt.com "Smart LIN driver IC for small motors <100W (MLX81325) I Melexis"
 [5]: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rh850-automotive-mcus/rh850u2b-zonedomain-and-vehicle-motion-microcontroller?utm_source=chatgpt.com "RH850/U2B - Zone/Domain/Vehicle Motion Microcontroller Series | Renesas"
 [6]: https://www.digikey.jp/en/product-highlight/t/trinamic/tmc8461-tmc8462-ethercat-slave-controllers?utm_source=chatgpt.com "TMC8461/TMC8462 Slave Controllers - TRINAMIC | DigiKey"
+
+Q2 Is PWM not used in motor control?
+A2 
+Oh yes — PWM is *absolutely central* to motor control.
+In fact, most modern motor control ICs exist largely to generate and manage PWM safely and precisely.
+
+The key point is:
+
+> Modern motor-control ICs = PWM generation + sensing + protection + networking + control algorithms.
+
+---
+
+# What PWM Does in Motor Control
+
+PWM = Pulse Width Modulation.
+
+Instead of applying a continuous analog voltage to the motor, the controller rapidly switches the power transistors ON/OFF.
+
+The average voltage/current is controlled by duty cycle:
+
+V_{avg}=D\cdot V_{supply}
+
+Where:
+
+* (D) = duty cycle (0–1)
+* (V_{avg}) = effective motor voltage
+
+---
+
+# Why PWM Is Used
+
+PWM gives:
+
+* high efficiency
+* low heat
+* precise torque control
+* precise speed control
+* digital control compatibility
+
+Without PWM, motor drivers would waste enormous power as heat.
+
+---
+
+# Typical PWM Frequencies
+
+| Application           | PWM Frequency |
+| --------------------- | ------------- |
+| Small DC motor        | 1–20 kHz      |
+| BLDC/PMSM             | 10–40 kHz     |
+| EV traction inverter  | 8–20 kHz      |
+| Industrial servo      | 20–100 kHz    |
+| GaN high-speed drives | 100 kHz+      |
+
+Higher PWM frequency:
+
+* smoother torque
+* less audible noise
+* higher switching losses
+
+So there is always a tradeoff.
+
+---
+
+# Motor-Control IC Architecture
+
+A modern motor-control IC typically contains:
+
+```text id="cn99j4"
+Control Algorithm
+(FOC / PID / Torque Loop)
+          │
+PWM Generator Unit
+          │
+Dead-time insertion
+          │
+Gate Driver
+          │
+MOSFET / IGBT / SiC
+          │
+Motor phases
+```
+
+---
+
+# BLDC / PMSM Motors Use 3-Phase PWM
+
+For modern EVs and robotics:
+
+* 3 half-bridges
+* 6 MOSFETs or IGBTs
+* sinusoidal or space-vector PWM
+
+are used.
+
+The controller synthesizes rotating magnetic fields using PWM.
+
+---
+
+# Space Vector PWM (SVPWM)
+
+Very common in:
+
+* EV traction
+* industrial servo
+* drones
+* robotics
+
+Instead of simple sine PWM, it optimizes DC bus utilization.
+
+Conceptually:
+
+V_{\alpha\beta}=\frac{2}{3}(V_a+aV_b+a^2V_c)
+
+This transforms 3-phase signals into vector space control.
+
+---
+
+# Field-Oriented Control (FOC)
+
+Modern high-performance motor control usually uses FOC.
+
+FOC continuously computes:
+
+* rotor angle
+* dq-axis currents
+* torque-producing current
+* flux-producing current
+
+Then generates PWM accordingly.
+
+Core transform:
+
+\begin{bmatrix}i_d\i_q\end{bmatrix}=\begin{bmatrix}\cos\theta & \sin\theta\-\sin\theta & \cos\theta\end{bmatrix}\begin{bmatrix}i_\alpha\i_\beta\end{bmatrix}
+
+This is why modern motor-control MCUs often include:
+
+* hardware PWM timers
+* ADC synchronization
+* encoder interfaces
+* trigonometric accelerators
+* DSP instructions
+
+---
+
+# Dedicated PWM Hardware Exists Inside MCUs
+
+Automotive and industrial MCUs contain advanced PWM peripherals:
+
+| Vendor                      | PWM Peripheral             |
+| --------------------------- | -------------------------- |
+| Infineon Technologies AURIX | GTM (Generic Timer Module) |
+| Texas Instruments C2000     | ePWM                       |
+| NXP Semiconductors S32K     | FlexPWM                    |
+| Renesas Electronics RH850   | GPT/MTU                    |
+| STMicroelectronics STM32G4  | HRTIM                      |
+
+These are *far* more sophisticated than ordinary timer PWM.
+
+Features include:
+
+* complementary outputs
+* dead-time insertion
+* ADC trigger synchronization
+* fault shutdown
+* phase shift control
+* center-aligned PWM
+* high-resolution timing
+* emergency stop logic
+
+---
+
+# Dead Time Is Critical
+
+In a half-bridge:
+
+```text id="h6a7p1"
+High-side MOSFET
+     │
+ Motor phase
+     │
+Low-side MOSFET
+```
+
+You must NEVER turn both on simultaneously.
+
+PWM hardware inserts “dead time”:
+
+```text id="4tvmd5"
+HS OFF
+     ↓
+(dead time)
+     ↓
+LS ON
+```
+
+Otherwise:
+
+* shoot-through current
+* MOSFET destruction
+* inverter failure
+
+can occur instantly.
+
+---
+
+# Automotive EV Inverters
+
+Modern EV traction systems use:
+
+* PWM
+* FOC
+* SiC MOSFETs
+* resolver feedback
+* synchronized ADC sampling
+
+all tightly coupled.
+
+Typical control loop:
+
+* current loop: 10–50 kHz
+* PWM update: 10–40 kHz
+* torque loop: 1–5 kHz
+
+---
+
+# Relationship Between CAN/Ethernet and PWM
+
+Important distinction:
+
+| Function               | Technology                 |
+| ---------------------- | -------------------------- |
+| Network communication  | CAN FD / CAN XL / Ethernet |
+| Actual motor actuation | PWM                        |
+
+CAN/Ethernet transport:
+
+* torque commands
+* diagnostics
+* telemetry
+* synchronization
+
+PWM performs the actual power conversion.
+
+So Ethernet does *not* replace PWM.
+
+Instead:
+
+```text id="g2epv9"
+Ethernet/CAN
+      ↓
+Motor-control MCU
+      ↓
+PWM generation
+      ↓
+Gate driver
+      ↓
+Power MOSFETs
+      ↓
+Motor
+```
+
+That stack is still the dominant architecture today.
